@@ -11,10 +11,7 @@ libsdl1.2-dev \
 
 EOF
 
-git clone http://github.com/kaplan2539/ioquake3-chip
-pushd ioquake3-chip
 make
-popd
 
 sudo cp build/release-linux-arm/ioquake3.arm /usr/local/bin
 sudo cp run.sh /usr/local/bin/openarena
