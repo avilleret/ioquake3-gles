@@ -343,10 +343,10 @@ void GLimp_Init(void)
 
 	if (pandora_driver_mode_x11)
 	{
-		XMoveResizeWindow(dpy, win, 0, 0, WidthOfScreen(screen),
-				HeightOfScreen(screen));
-		glConfig.vidWidth = WidthOfScreen(screen);
+		glConfig.vidWidth = WidthOfScreen(screen)-1;
 		glConfig.vidHeight = HeightOfScreen(screen);
+		XMoveResizeWindow(dpy, win, 0, 0, glConfig.vidWidth,
+				glConfig.vidHeight);
 	}
 	else
 	{
