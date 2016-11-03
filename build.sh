@@ -16,6 +16,9 @@ pushd ioquake3-chip
 make
 popd
 
+sudo cp build/release-linux-arm/ioquake3.arm /usr/local/bin
+sudo cp run.sh /usr/local/bin/openarena
+
 echo "installing openarena assets..."
 sudo apt-get -y install openarena
 
@@ -30,5 +33,6 @@ popd
 
 echo "adding special rule to awesome configuration"
 patch ~/.config/awesome/rc.lua <awesome.patch
+killall -s 1 x-session-manager
 
 

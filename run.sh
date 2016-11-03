@@ -2,7 +2,8 @@
 
 export DISPLAY=:0
 
-./build/release-linux-arm/ioquake3.arm \
+#./build/release-linux-arm/ioquake3.arm \
+ioquake3.arm \
 +set sv_pure 0 \
 +set vm_game 0 \
 +set vm_cgame 0 \
