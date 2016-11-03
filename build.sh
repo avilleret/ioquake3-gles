@@ -19,7 +19,7 @@ sudo cp run.sh /usr/local/bin/openarena
 echo "-- installing openarena assets..."
 sudo apt-get -y install openarena
 
-CONFIG_DIR=~/.q3a/baseq3
+CONFIG_DIR=~/.q3a/foobar
 
 mkdir -p "${CONFIG_DIR}"
 
