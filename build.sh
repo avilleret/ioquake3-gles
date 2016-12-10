@@ -8,6 +8,8 @@ apt-get -y install \
 build-essential \
 git \
 libsdl1.2-dev \
+libgles1-mesa-dev \
+libegl1-mesa-dev \
 
 EOF
 
